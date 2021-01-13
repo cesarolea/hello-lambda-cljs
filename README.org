@@ -1,0 +1,41 @@
+#+TITLE: hello-lambda-cljs
+
+Companion code for the article at
+[[https://blog.cesarolea.com/posts/aws-lambdas-with-clojurescript/index.html]].
+
+* Prerequisites
+
+- Clojure
+- Leiningen
+- nodes / bpm
+
+* Compiling
+
+#+begin_src sh
+lein cljsbuild once
+#+end_src
+
+It will generate a ~hello_lambda_cljs.js~ file that can be run with
+node ~node hello_lambda_cljs.js~.
+
+* Running as AWS lambda
+
+Create a deployment bundle with:
+
+#+begin_src sh
+zip -r hello-lambda.zip hello_lambda_cljs.js node_modules
+#+end_src
+
+And deploy as any other lambda. Set the handler as
+~hello_lambda_cljs.handler~.
+
+* REPL
+
+The REPL uses shadow-cljs. First install it with ~npm install -D
+shadow-cljs~ and create a ~shadow-cljs.edn~ file with:
+
+#+begin_src clojure
+  {:dependencies [[cider/cider-nrepl "0.25.6"]]}
+#+end_src
+
+Run the REPL with ~npx shadow-cljs node-repl~.
