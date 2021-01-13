@@ -41,3 +41,7 @@ shadow-cljs~ and create a ~shadow-cljs.edn~ file with:
 #+end_src
 
 Run the REPL with ~npx shadow-cljs node-repl~.
+
+* Authors
+
+- César Olea - /Initial work/ - [[https://blog.cesarolea.com/][Personal Homepage]]
