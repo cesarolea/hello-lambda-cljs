@@ -9,7 +9,7 @@ using npm dependencies.
 
 - Clojure
 - Leiningen
-- nodes / bpm
+- node / npm
 
 * Compiling
 
