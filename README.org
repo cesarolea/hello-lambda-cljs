@@ -1,7 +1,9 @@
 #+TITLE: hello-lambda-cljs
 
 Companion code for the article at
-[[https://blog.cesarolea.com/posts/aws-lambdas-with-clojurescript/index.html]].
+[[https://blog.cesarolea.com/posts/aws-lambdas-with-clojurescript/index.html]]. It
+demonstrate how to write an AWS lambda function with ClojureScript
+using npm dependencies.
 
 * Prerequisites
 
